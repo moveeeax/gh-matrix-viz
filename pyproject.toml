@@ -1,0 +1,30 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "gh-matrix-viz"
+version = "0.1.0"
+description = "Render a GitHub Actions workflow job matrix as a readable table or graph."
+readme = "README.md"
+requires-python = ">=3.9"
+license = { text = "MIT" }
+authors = [{ name = "Michael Tarassov", email = "michael@tarassov.me" }]
+keywords = ["github-actions", "ci", "matrix", "workflow", "visualization", "devops"]
+dependencies = ["PyYAML>=5.4"]
+
+[project.optional-dependencies]
+test = ["pytest>=7"]
+
+[project.urls]
+Homepage = "https://github.com/moveeeax/gh-matrix-viz"
+
+[project.scripts]
+gh-matrix-viz = "gh_matrix_viz.cli:main"
+
+[tool.setuptools]
+packages = ["gh_matrix_viz"]
+
+[tool.pytest.ini_options]
+addopts = "-q"
+testpaths = ["tests"]
