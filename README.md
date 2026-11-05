@@ -1,7 +1,7 @@
 # gh-matrix-viz
 
 [![ci](https://github.com/moveeeax/gh-matrix-viz/actions/workflows/ci.yml/badge.svg)](https://github.com/moveeeax/gh-matrix-viz/actions/workflows/ci.yml)
-![python](https://img.shields.io/badge/python-3.9%2B-blue)
+![python](https://img.shields.io/badge/python-3.11%2B-blue)
 ![license](https://img.shields.io/badge/license-MIT-green)
 
 Understand a sprawling GitHub Actions job matrix at a glance instead of reading YAML.
